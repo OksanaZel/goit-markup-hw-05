@@ -340,12 +340,13 @@ img {
 
 .work-list-description {
   position: absolute;
+  left: 0;
   bottom: 0;
 
   min-width: 370px;
-  background: rgba(47, 48, 58, 0.8);
   padding-top: 27px;
   padding-bottom: 27px;
+  background: rgba(47, 48, 58, 0.8);
 
   font-family: Roboto;
   font-weight: 700;
@@ -597,6 +598,34 @@ img {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+.portfolio-list-link {
+  position: relative;
+}
+
+.portfolio-list-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transform: translateY(100%);
+  overflow: hidden;
+
+  min-width: 370px;
+  min-height: 294px;
+
+  padding-left: 29px;
+  padding-right: 19px;
+  padding-top: 56px;
+  padding-bottom: 70px;
+
+  background-color: rgba(33, 150, 243, 0.9);
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.156;
+  color: #ffffff;
+}
+
 .portfolio-card-content {
   padding-left: 24px;
   padding-right: 24px;
@@ -666,3 +695,48 @@ img {
 }
 
 /*========== END PORTFOLIO=========*/
+
+/*========== BACKDROP =========*/
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 528px;
+  height: 581px;
+
+  background-color: white;
+  border-radius: 4px;
+}
+
+.modal-button-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0;
+  width: 30px;
+  height: 30px;
+
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.modal-icon-close {
+  width: 18px;
+  height: 18px;
+}
+/*========== END BACKDROP =========*/
