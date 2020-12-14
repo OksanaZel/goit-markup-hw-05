@@ -57,7 +57,7 @@
         <section class="hero section">
             <div class="container">
                 <h1 class="title">Эффективные решения для вашего бизнеса</h1>
-                <button class="modal-btn" type="button">Заказать услугу</button>
+                <button class="modal-btn" type="button" data-modal-open>Заказать услугу</button>
             </div>
             </section>
         <!-- Преимущества -->
@@ -114,19 +114,25 @@
                 <h2 class="title">Чем мы занимаемся</h2>
                 <ul class="work-list">
                     <li class="work-list-item list">
-                        <img class="work-list-img" src="./img/img-1.jpg" alt="Создаем структуру сайта"
-                            width="370" height="294">
-                        <p class="work-list-description">Десктопные приложения</p>
+                        <div class="work-list-wrapper">
+                            <img class="work-list-img" src="./img/img-1.jpg" alt="Создаем структуру сайта"
+                                width="370" height="294">
+                            <p class="work-list-description">Десктопные приложения</p>
+                        </div>
                     </li>
                     <li class="work-list-item list">
-                        <img class="work-list-img" src="./img/img-2.jpg" alt="Проверяем адаптивность сайта"
-                            width="370" height="294">
-                        <p class="work-list-description">Мобильные приложения</p>
+                        <div class="work-list-wrapper">
+                            <img class="work-list-img" src="./img/img-2.jpg" alt="Проверяем адаптивность сайта"
+                                width="370" height="294">
+                            <p class="work-list-description">Мобильные приложения</p>
+                        </div>
                     </li>
                     <li class="work-list-item list">
-                        <img class="work-list-img" src="./img/img-3.jpg" alt="Подбираем цветовую гамму"
-                            width="370" height="294">
-                        <p class="work-list-description">Дизайнерские решения</p>
+                        <div class="work-list-wrapper">
+                            <img class="work-list-img" src="./img/img-3.jpg" alt="Подбираем цветовую гамму"
+                                width="370" height="294">
+                            <p class="work-list-description">Дизайнерские решения</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -376,14 +382,15 @@
         </div>
     </footer>
 
-    <div class="backdrop is-hidden">
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button class="modal-button-close" type="button">
+            <button class="modal-button-close" type="button" data-modal-close>
                 <svg class="modal-icon-close">
                     <use href="./img/sprite.svg#close"></use>
                 </svg>
             </button>
         </div>
     </div>
+<script src="./js/modal.js"></script>
 </body>
 </html>
